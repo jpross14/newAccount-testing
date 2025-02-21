@@ -1,15 +1,15 @@
 class RandomizedQueue[Item]:
     # construct an empty randomized queue
     def __init__(self):
-        pass
+        self.radQ: list[Item] = []
 
     # is the randomized queue empty?
     def is_empty(self) -> bool:
-        pass
+        return len(self.radQ) == 0
 
     # return the number of items on the randomized queue
     def size(self) -> int:
-        pass
+        return len(self.radQ)
 
     # add the item
     def enqueue(self, item: Item) -> None:

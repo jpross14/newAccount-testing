@@ -7,31 +7,31 @@
 class Deque[Item]:
     # construct an empty deque
     def __init__(self):
-        pass
+        self.deque: list[Item] = []
 
     # is the deque empty?
     def is_empty(self) -> bool:
-        pass
+        return len(self.deque) == 0
 
     # return the number of items on the deque
     def size(self) -> int:
-        pass
+        return len(self.deque)
 
     # add the item to the front
     def add_first(self, item: Item) -> None:
-        pass
+        self.deque.insert(0, item)
 
     # add the item to the back
     def add_last(self, item: Item) -> None:
-        pass
+        self.deque.append(item)
 
     # remove and return the item from the front
     def remove_first(self) -> Item:
-        pass
+        return self.deque.pop(0)
 
     # remove and return the item from the back
     def remove_last(self) -> Item:
-        pass
+        return self.deque.pop()
 
     def __iter__(self):
         pass
